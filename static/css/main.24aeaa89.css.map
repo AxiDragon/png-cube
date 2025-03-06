@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.24aeaa89.css","mappings":"AAAA,gBAMC,qBAAuB,CAHvB,QAID,CAEA,qBAJC,WAAY,CADZ,UAQD","sources":["index.css"],"sourcesContent":["html,\r\nbody,\r\n#root {\r\n\tmargin: 0;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tbackground-color: black;\r\n}\r\n\r\n#App {\r\n\twidth: 100%;\r\n\theight: 100%;\r\n}"],"names":[],"sourceRoot":""}
