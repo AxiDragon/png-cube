@@ -25,6 +25,8 @@ function RandomizedBox({ textureUrl }: BoxProps) {
 			img.onload = () => {
 				texture.image = img;
 				texture.needsUpdate = true;
+				texture.minFilter = NearestFilter;
+				texture.magFilter = NearestFilter;
 			};
 		}
 	}, [textureUrl, texture]);
