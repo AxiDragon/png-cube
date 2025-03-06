@@ -7,6 +7,7 @@ export default function generatePNG(width: number, height: number): string {
 	const imageData = context.createImageData(width, height);
 	const data = imageData.data;
 
+	//add some random bias
 	for (let x = 0; x < width; x++) {
 		for (let y = 0; y < height; y++) {
 			const index = (x + y * width) * 4;
@@ -45,10 +46,11 @@ export async function randomizePixel(x: number, y: number, radius: number, dataU
 			if (dx * dx + dy * dy <= radius * radius) {
 				//set the pixel to a random color
 				const index = (x + dx + (y + dy) * img.width) * 4;
-				data[index] = Math.random() * 255; // R
-				data[index + 1] = Math.random() * 255; // G
-				data[index + 2] = Math.random() * 255; // B
-				data[index + 3] = 255; // A
+				// data[index] = Math.random() * 255; // R
+				// data[index + 1] = Math.random() * 255; // G
+				// data[index + 2] = Math.random() * 255; // B
+				// data[index + 3] = 255; // A				
+				data[index + 3] = 0; // A
 			}
 		}
 	}
